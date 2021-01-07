@@ -21,6 +21,7 @@ async function breedFunction(){
 
 async function getRandomDogs() {
   counter ++;
+  document.getElementById("counter").innerHTML=counter;
   const response = await fetch(API_URL);
   const json = await response.json();
   console.log(json.message);
@@ -46,6 +47,7 @@ getRandomDogs();
 
 async function refreshRandomDogs() {
   counter = 1;
+  document.getElementById("counter").innerHTML=counter;
   randomDogsElement.innerHTML = '';
   const response = await fetch(API_URL);
   const json = await response.json();
