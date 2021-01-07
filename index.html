@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WikiDogs</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<header>
+  <h1>
+    Wiki Dogs
+  </h1>
+  <h2>
+    Your source of random dogs!
+  </h2>
+  <img src="img/perrico.png"></img>
+
+
+</header>
+
+<body>
+  <main>
+    <div id="randomButton">
+      <button  onclick="getRandomDogs()">More Dogs!</button>
+      <button id="refreshButton" onclick="refreshRandomDogs()">I don't like these dogs!</button>
+      <input id="breedInput" type="text" placeholder="Write in lowcase & together"></input>
+      <button id="breedShow" onclick="breedFunction()">GO!</button>
+
+    </div>
+
+    <div class="random-dogs">
+      <img src="" id="breed"></img>
+
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+<footer>
+  Hecho por Jorge Ramírez Molina
+</footer>
+
+</html>
