@@ -1,7 +1,7 @@
 const API_URL = 'https://dog.ceo/api/breeds/image/random/1';
 const randomDogsElement = document.querySelector('.random-dogs');
 var breed = document.getElementById("breedInput");
-var API_Breed = 'https://dog.ceo/api/breed/'+breed+'/images/random';
+var API_Breed = 'https://dog.ceo/api/breed/'+breed+'/images';
 var counter = 0;
 
 // Por culpa de la api no se puede realizar busquedas normales de manera sencilla puesto que ofrece la informacion de la raza dentro de la url
@@ -14,7 +14,7 @@ async function breedFunction(){
   const response = await fetch(API_Breed);
   const json = await response.json();
   console.log(json.message);
-  document.getElementById('breed').src=API_Breed;
+  document.getElementById('breed').src=json.message;
 };
 
 
