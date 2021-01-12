@@ -42,9 +42,6 @@ async function getRandomDogs() {
 };
 
 
-
-getRandomDogs();
-
 async function refreshRandomDogs() {
   counter = 1;
   document.getElementById("counter").innerHTML=counter;
